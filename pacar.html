@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Girlfriend's Photo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Upload Foto Pacar</h1>
+
+    <label for="girlfriendName">Nama Pacar:</label>
+    <input type="text" id="girlfriendName" placeholder="Masukkan nama pacar...">
+    <button onclick="showGirlfriendPhoto()">Submit</button>
+
+    <div id="result"></div>
+
+    <script>
+        function showGirlfriendPhoto() {
+            var girlfriendName = document.getElementById('girlfriendName').value;
+            var resultContainer = document.getElementById('result');
+
+            if (girlfriendName) {
+                // Ganti "URL_GAMBAR" dengan URL gambar yang diunggah
+                resultContainer.innerHTML = `
+                    <h2>Foto ${girlfriendName}</h2>
+                    <img src="pacar.jpg" alt="Foto ${girlfriendName}">
+                `;
+            } else {
+                alert('desi altia.');
+            }
+        }
+    </script>
+
+</body>
+</html>
